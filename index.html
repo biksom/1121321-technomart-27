@@ -39,10 +39,13 @@ checkout.html">Оформить заказ</a></li>
 			</div>
 			<ul class="acount-action-list">
 				<li>
+				  <a class="login-link" href="login.html">
 					<img src="img/icon-login.svg">
 					<button class="login-button">Войти</button>
+				  </a>
 				</li>
 				<li>
+
 					<button class="registration-button">Регистрация</button>
 				</li>
 			</ul>
@@ -244,6 +247,7 @@ checkout.html">Оформить заказ</a></li>
 				Вы можете забрать товар сами,<br>
 				заехав в наш офис:</p>
 				<!-- Здесь будет карта -->
+				<img src="img/map.jpg" width="300" height="158" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"><br>
 				<a href="mail.html">Заблудились? Напишите Нам!</a> 
   		</section>
         <footer class="main-footer">
@@ -300,5 +304,52 @@ checkout.html">Оформить заказ</a></li>
     	</p>
         </footer>
   	</main>
+  	  <div class="modal modal-login">
+  	  	<h2>Личный кабинет</h2>
+  	  	  <p>Введите свой логин и пароль</p>
+  	  	    <form class="login-form" method="post">
+              <p>
+              	<label class="visually-hidden" for="user-login">Логин</label>
+              	<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+              </p>
+  	  	  	  <p>
+  	  	  	  	<label class="visually-hidden" for="user-password">Пароль</label>
+  	  	  	  	<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+  	  	  	  </p>
+  	  	  	  <p class="login-password-info">
+  	  	  	  	<input type="checkbox" name="remember" id="login-password-info">
+  	  	  	  	  <label for="login-password-info">
+  	  	  	  	  Запомните меня
+                  </label>
+  	  	  	  	<a class="restore" href="#">Я забыл пароль!</a>
+  	  	  	  </p>
+  	  	  	  <button class="button" type="submit" >
+  	  	  	  	Войти
+  	  	  	  </button>
+  	  	    </form>
+  	  	    <button class="modal-close" type="button">
+  	  	      Закрыть	
+  	  	    </button> 	  	
+  	  </div>
+  	  <div class="profile">
+  	  	<h2>Регистрация</h2>
+  	  	  <form method="post" action="">
+            <p> 
+  	  	  	  <label for="name">Имя</label>
+  	  	  	  <input type="text" id="name" name="name" required>
+  	  	  	</p>
+  	  	  	<p>
+  	  	  		<label for="surname">Фамилия</label>
+  	  	  		<input type="text" id="surname" name="surname" required>
+  	  	  	</p>
+  	  	  	<p>
+  	  	  		<label for="email">E-mail</label>
+  	  	  		<input type="email" id="email" name="email" required>
+  	  	  	</p>
+  	  	  	<button type="submit">Отправить</button>
+  	  	  </form>
+
+  	  	
+  	  </div>
   </body>
 </html>
