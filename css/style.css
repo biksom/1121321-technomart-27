@@ -1,7 +1,7 @@
-/*body{
+body{
 	font-family: Cuprum, PT Sans, sans-serif;
 }
-*/
+
 
 .main-header{
 	background-color: #f3f7f8;;
@@ -21,12 +21,25 @@ ul{
 .last-footer{
 	background-color: #293449;
 }
+
+.main-header-logo img:hover{
+	background-color: #ca2c37;
+}
+
+.main-header-logo img:focus{
+	background-color: #ee3643;
+}
+
 .user-navigation a{
 	font-family: Cuprum;
 	font-size: 17px;
 	line-height: 18px;
-	color: #ffffff;
-	
+	color: #ffffff;	
+}
+
+.user-navigation a:active{
+	background-color: #161d29;
+
 }
 
 .tagline{
