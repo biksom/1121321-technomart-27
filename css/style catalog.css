@@ -17,6 +17,7 @@ ul{
 	background-color: #293449;
 }
 
+
 .main-header-logo img:hover,
 .main-header-logo img:active{
 	background-color: #ca2c37;
@@ -107,4 +108,33 @@ ul{
 
 .footer-copyright a{
 	color: #ffd180;
+}
+
+/*Временно для сетки*/
+
+
+.main-header{
+	display: flex;
+	min-height: 320px;
+	flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.main-header-top{
+	display: flex;
+	width: 100%;
+	padding-left: 130px;
+	padding-right: 130px; 
+	min-height: 42px;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #293449;
+}
+
+.user-navigation{
+	display: flex;
+	
 }
