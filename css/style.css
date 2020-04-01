@@ -23,18 +23,53 @@ ul{
 	background-color: #293449;
 }
 
+
 .main-header-logo{
-	width: 220px;
-	height: 47px;
+	background-size: 220px 47px;
+	background-color: #ee3643;
+	padding: 15px 56px;
+	box-shadow:  0px 5px #9a212a;
 }
 
-.main-header-logo img:hover{
+.main-header-logo:hover{
 	background-color: #ca2c37;
 }
 
-.main-header-logo img:focus{
+.main-header-logo:focus{
 	background-color: #ee3643;
 
+}
+
+input[type="button"]{
+	border: none;
+	font-family: Cuprum;
+	line-height: 18px;
+	font-size: 17px;
+	background-color: transparent;
+	color: #ffffff;
+}
+
+
+.search{
+	padding-right: 85px;
+}
+
+.user-navigation .user-navigation-bookmarks-link{
+	position: relative;
+	padding-left: 50px;
+} 
+
+.user-navigation-bookmarks-link::before{
+	content: " ";
+	position: absolute;
+	/*top: 12px;*/
+	left: 27px;
+	width: 14px;
+	height: 16px;
+	background-image: url("img/icon-bookmark.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background: #ff0000;
 }
 
 .user-navigation a{
@@ -44,24 +79,81 @@ ul{
 	color: #ffffff;	
 }
 
-.user-navigation a:active{
-	background-color: #161d29;
+.user-navigation-bookmarks a{
+	background-size: 150px 42px;
+	padding: 17px 28px 16px 44px;
 
 }
+
+.user-navigation-basket a{
+	background-size: 150px 42px;
+	padding: 17px 28px;
+
+}
+
+.user-navigation-bookmarks,
+.user-navigation-basket:activ{
+	background-color: #161d29;
+	color: #white-60
+}
+
+.user-navigation a:active{
+	background-color: #161d29;
+}
+
+.user-navigation-current a{
+	background-size: 150px 42px;
+	background-color: #63a63e;
+	padding: 17px 22px 17px 20px;
+
+}
+
+.user-navigation-current a:hover{
+	background-color: #5fbb2d;
+}
+
+.user-navigation-current a:active{
+	background-color: #518534;
+
+}
+
 
 .tagline{
 	font-family: Cuprum;
 	font-size: 16px;
 	line-height: 23px;
 	color: #ee3643;
+	padding-left: 33px;
+
+}
+
+.contacts .contacts-link{
+	position: relative;
+	padding-left: 59px;
+}
+
+.contacts-link::before{
+	content: "";
+	position: absolute;
+	left: 18px;
+	width: 19px;
+	height: 19px;
+	background-image: url("img/icon-phone.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: #ff0000;
 
 }
 
 .contacts a{
+	width: 270px;
+	height: 45px;
+	padding: 13px 52px 11px 74px;
 	font-family: Cuprum;
 	font-size: 21px;
 	line-height: 21px;
 	color: #ee3643;
+	border: 3px solid #ffffff;
 }
 
 .address{
@@ -196,21 +288,17 @@ ul{
 /*Временно для сетки*/
 
 
-.main-header{
+/*.main-header{
 	display: flex;
 	min-height: 320px;
 	flex-direction: column;
 	align-items: center;
-}
+}*/
 
 .main-header-top-wrapper{
 	display: flex;
-	width: 100%;
-	padding-left: 130px;
-	padding-right: 130px; 
-	min-height: 42px;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	max-width: 940px;
 	margin: 0 auto;
 }
@@ -243,6 +331,7 @@ ul{
     width: 940px;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .acount-action-list{
@@ -254,9 +343,10 @@ ul{
 	flex-wrap: wrap;
 	min-height: 60px;
 	align-items: center;
-	width: 940px;
+	max-width: 940px;
 	justify-content: space-around; 
 	padding: 0;
+	margin: 0 auto;
 }
 
 .cooperation{
