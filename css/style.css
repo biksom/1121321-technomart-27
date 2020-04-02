@@ -5,7 +5,8 @@ body{
 
 
 .main-header{
-	background-color: #f3f7f8;;
+	background-color: #f3f7f8;
+	height: 320px;
 }
 
 a{
@@ -148,10 +149,10 @@ input[type="button"]{
 .contacts{
 	margin-top: 30px;
 }
-.contacts a{
+.contacts .contacts-link{
 	width: 270px;
 	height: 45px;
-	padding: 13px 52px 11px 74px;
+	padding: 9px 52px 9px 74px;
 	font-family: Cuprum;
 	font-size: 21px;
 	line-height: 21px;
@@ -164,7 +165,12 @@ input[type="button"]{
 	font-size: 14px;
 	line-height: 24px;
 	color: #32425c;
-	margin-left: 5px;
+	margin-left: 13px;
+}
+
+.acount-action-list{
+	margin-bottom: 40px;
+
 }
 
 .login-button,
@@ -173,6 +179,23 @@ input[type="button"]{
 	font-size: 21px;
 	line-height: 21px;
 	color: #000000;
+	border: none;
+	background: #ffffff;
+}
+
+.login-button{
+	width: 121px;
+	height: 45px;
+}
+
+.registration-button{
+	width: 150px;
+	height: 45px;
+}
+
+.site-navigation{
+	background-color: #32425c;
+	box-shadow: 0px 5px #293449;
 }
 
 .site-navigation a{
@@ -340,6 +363,8 @@ input[type="button"]{
 
 .acount-action-list{
 	display: flex;
+	width: 282px;
+	justify-content: space-between;
 }
 
 .site-navigation{
