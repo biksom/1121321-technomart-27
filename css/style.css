@@ -52,10 +52,24 @@ input[type="button"]{
 
 
 .search{
-	padding-right: 85px;
+	padding-right: 85px; 
 }
 
-.user-navigation .user-navigation-bookmarks-link{
+.search input{
+	position: relative;
+	padding-left: 30px; 
+}
+
+.search input{
+    right: 20px;
+	background-image: url(../img/icon-search.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+}
+
+.user-navigation .user-navigation-bookmarks-link,
+.user-navigation-basket-link{
 	position: relative;
 	padding-left: 50px;
 } 
@@ -63,14 +77,35 @@ input[type="button"]{
 .user-navigation-bookmarks-link::before{
 	content: " ";
 	position: absolute;
-	/*top: 12px;*/
 	left: 27px;
 	width: 14px;
 	height: 16px;
-	background-image: url("img/icon-bookmark.svg");
+	background-image: url(../img/icon-bookmark.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background: #ff0000;
+	opacity: 0.3;
+}
+
+.user-navigation-basket-link::before{
+    content: " ";
+	position: absolute;
+	left: 2px;
+	width: 14px;
+	height: 16px;
+	background-image: url(../img/icon-cart.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.user-navigation-bookmarks-link:hover::before,
+.user-navigation-basket-link:hover::before{
+	opacity: 1;
+}
+
+.user-navigation-bookmarks-link:active::before,
+.user-navigation-basket-link:active::before{
+	opacity: 0.5;
 }
 
 .user-navigation a{
@@ -94,7 +129,6 @@ input[type="button"]{
 
 .user-navigation a:active{
 	background-color: #161d29;
-	opacity: 0.6;
 }
 
 .user-navigation-current a{
@@ -135,10 +169,10 @@ input[type="button"]{
 	left: 18px;
 	width: 19px;
 	height: 19px;
-	background-image: url("img/icon-phone.svg");
+	background-image: url("../img/icon-phone.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-color: #ff0000;
+	
 
 }
 
@@ -183,6 +217,40 @@ input[type="button"]{
 	width: 121px;
 	height: 45px;
 }
+
+.login-link .login-button{
+	position: relative;
+	padding-left: 40px;
+} 
+
+.login-button::before{
+	content: "";
+	position: absolute;
+	left: 24px;
+	width: 20px;
+	height: 17px;
+	background-image: url(../img/icon-login.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.3;
+}
+
+.login-button:hover::before{
+	opacity: 1;
+}
+
+.login-link .login-button:hover,
+.registration-button:hover{
+	color: red;
+}
+
+.login-link .login-button:active::before,
+.login-link .login-button:active,
+.registration-button:active{
+	opacity: 0.3;
+	color: black;
+}
+	
 
 .registration-button{
 	width: 150px;
@@ -320,13 +388,6 @@ input[type="button"]{
 /*Временно для сетки*/
 
 
-/*.main-header{
-	display: flex;
-	min-height: 320px;
-	flex-direction: column;
-	align-items: center;
-}*/
-
 .main-header-top-wrapper{
 	display: flex;
 	align-items: center;
@@ -336,15 +397,7 @@ input[type="button"]{
 }
 
 .main-header-top{
-	/*display: flex;
-	width: 100%;
-	padding-left: 130px;
-	padding-right: 130px; 
-	min-height: 42px;
-	align-items: center;
-	justify-content: space-around;*/
 	background-color: #293449;
-
 }
 
 
@@ -352,7 +405,6 @@ input[type="button"]{
 	display: flex;
 	align-items: center;
 	width: 434px;
-	padding-right: 40px; 
 	justify-content: space-around;
 	
 }
