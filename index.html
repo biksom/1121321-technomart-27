@@ -14,10 +14,13 @@
   		  <a class="main-header-logo" href="index.html">
   		    <img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта">
   	      </a>
-  	      <div class="search">
-  	      	<!-- <img src="img/icon-search.svg" width="15" height="15"> -->
-  	      	<input type="button" name="search"  value="Поиск:">
-  	      </div>
+  	      <!-- <div class="search"> -->
+  	      	<form class="search">
+              <input class="search-input" type="text" placeholder="Поиск:">
+              <!-- <button class="search-button" type="submit"></button> -->
+            </form>
+  	      	<!-- <input type="button" name="search"  value="Поиск:"> -->
+  	      <!-- </div> -->
   	         <ul class="user-navigation">
 				<li class="user-navigation-bookmarks">
 				  <a class="user-navigation-bookmarks-link" href="bookmarks.html">Закладки</a>
@@ -245,10 +248,11 @@ checkout.html">Оформить заказ</a></li>
   			  </p>
   			    <h2 class="visually-hidden">Сотрудничесво</h2>
   			 	 <ul class="cooperation-list">
-  			  		<li class="cooperation-list-item"><img src="img/marker.png">Деловые линии</li>
-  			  		<li class="cooperation-list-item"><img src="img/marker.png">Автотрейдинг</li>
-  			  		<li class="cooperation-list-item"><img src="img/marker.png">ЖелДорЭкспедиция</li>
-  			 	 </ul>
+  			  		<li class="cooperation-list-one">Деловые линии</li><br>
+  			  		<li class="cooperation-list-two">Автотрейдинг</li>
+  			  		<br>
+  			  		<li class="cooperation-list-three">ЖелДорЭкспедиция</li>
+  			 	 </ul>	 
               <a class="about-us" href="#">Подробнее о компании</a>
           </section> 
           <section class="cooperation-wrapper-two">     
@@ -277,30 +281,28 @@ checkout.html">Оформить заказ</a></li>
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
 			</p>
   	    <ul class="navigation">
-  	    	<li"><a href="#">Материалы</a></li>
-  	    	<li"><a href="#">Техника</a></li>
-  	    	<li"><a href="#">Инструмент</a></li>
-  	    	<li"><a href="#">Спецпредложения</a></li>  	
+  	    	<li><a href="#">Материалы</a></li>
+  	    	<li><a href="#">Техника</a></li>
+  	    	<li><a href="#">Инструмент</a></li>
+  	    	<li><a href="#">Спецпредложения</a></li>  	
   	    </ul>
   	    </div>
-  	     <div class="last-footer">
-        <p class="copyrigh">	
+  	    <div class="last-footer-wrapper">
+  	     <div class="last-footer">	
+          <p class="copyrigh">	
         	© 2010–2019 Компания «Техномарт»<br>
             Все права защищены
-        </p>
+          </p>
         <div class="footer-social-wrapper">	
     	  <ul class="footer-social">
     	   <li>
-    	  	<img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте">
-    	  	<a class="social-button" href="#"></a>
+    	  	<a class="social-button" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="логотип вконтакте"></a>
     	   </li>
     	  <li>
-    	  	<img src="img/fb-icon.svg" width="12" height="22" alt="логотип фейсбука">
-    	  	<a class="social-button" href="#"></a>
+    	  	<a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="логотип фейсбука"></a>
     	  </li>
     	  <li>
-    	  	<img src="img/insta-icon.svg" width="21" height="21" alt="логотип Инстограма">
-    	  	<a class="social-button" href="#"></a>
+    	  	<a class="social-button" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="логотип Инстограма"></a>
     	  </li>
     	  </ul>
     	</div>  
@@ -313,6 +315,7 @@ checkout.html">Оформить заказ</a></li>
     	  <a class="button" href="">HTML Academy</a>
     	</p>
         </div>
+      </div>
         </footer>
   	</main>
   	  <div class="modal modal-login">

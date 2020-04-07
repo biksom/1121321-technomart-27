@@ -28,7 +28,7 @@ ul{
 .main-header-logo{
 	background-size: 220px 47px;
 	background-color: #ee3643;
-	padding: 15px 56px;
+	padding: 15px 35px;
 	box-shadow:  0px 5px #9a212a;
 }
 
@@ -51,21 +51,35 @@ input[type="button"]{
 }
 
 
-.search{
-	padding-right: 85px; 
+
+.search-input{
+	width: 270px;
+	height: 51px;
+	padding-right: 12px; 
+	outline: none;
+	border: none;
+
+
 }
 
-.search input{
+.search .search-input{
 	position: relative;
 	padding-left: 30px; 
+	background-color: #293449;
+	color: #ffffff;
+	
 }
 
-.search input{
-    right: 20px;
+.search-input{
+    /*right: 20px;*/
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
 	background-image: url(../img/icon-search.svg);
 	background-repeat: no-repeat;
-	background-position: 0 0;
-
+	background-position: 0 0; 
+    
 }
 
 .user-navigation .user-navigation-bookmarks-link,
@@ -305,18 +319,39 @@ input[type="button"]{
 	color: #000000;
 }
 
+.cooperation-list .cooperation-list-one,
+.cooperation-list .cooperation-list-two,
+.cooperation-list .cooperation-list-three{
+	position: relative;
+	/*padding-left: 20px*/;
+}
+
+.cooperation-list-one::before,
+.cooperation-list-two::before,
+.cooperation-list-three::before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -40px;
+	width: 25px;
+	height: 2px;
+	background-color: #ee3643;
+}
+
 .about-us{
 	font-family: Cuprum;
+	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
-	background-color: #ee3643; 
-
-
+	padding: 12px 45px;
+	background-color: #ee3643;
+	border-radius: 3px; 
 }
 
 .about-us-button{
 	font-family: Cuprum;
+	text-transform: uppercase;
 	font-size: 14px;
 	line-height: 18px;
 	color: #ffffff;
@@ -324,6 +359,8 @@ input[type="button"]{
 	width: 300px;
 	height: 38px;
 	border: none;
+	border-radius: 3px;
+	margin-top: 24px; 
 
 }
 
@@ -344,6 +381,15 @@ input[type="button"]{
 
 .main-footer{
 	background-color: #32425c;
+}
+
+.main-footer-logo{
+	background-size: 220px 68px;
+	background-color: #ee3643;
+	padding: 21px 41px;
+	margin-bottom: 21px; 
+	box-shadow:  0px 5px #9a212a;
+
 }
 
 .contacts-footer{
@@ -368,6 +414,18 @@ input[type="button"]{
 	color: #ffd180;
 }
 
+.site-navigation-footer a:hover,
+.navigation a:hover{
+     text-decoration: underline;
+
+}
+
+.site-navigation-footer a:active,
+.navigation a:active{
+     opacity: 0.5;
+
+}
+
 .copyrigh,
 .feedback,
 .footer-copyright{
@@ -375,6 +433,24 @@ input[type="button"]{
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
+}
+
+.social-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	background-color: #212a3a;
+}
+
+.social-button:hover{
+	background-color: #ee3643;
+}
+
+.social-button:active{
+	background-color: #ee3643;
 }
 
 .feedback a{
@@ -385,7 +461,18 @@ input[type="button"]{
 	color: #ffd180;
 }
 
+.feedback a:hover,
+.footer-copyright a:hover{
+	text-decoration: underline;
+}
+
+.feedback a:active,
+.footer-copyright a:active{
+	color: #ee3643;
+}
+
 /*Временно для сетки*/
+
 
 
 .main-header-top-wrapper{
@@ -439,28 +526,26 @@ input[type="button"]{
 	display: flex;
 	justify-content: space-between;
 	width: 940px;
-	margin-left: 130px;
-}
-
-.main-footer{
-	display: flex;
-	flex-direction: column;
+	min-height: 500px;
 	align-items: center;
-
+	margin: 0 auto;
 }
 
 .main-navigation{
 	display: flex;
-	min-height: 69px;
+	min-height: 90px;
 	width: 940px;
 	justify-content:space-between;
 	align-items: center;
+	margin: 0 auto;
+
 }	
 
 .site-navigation-footer{
 	display: flex;
 	width: 547px;
 	justify-content: space-between;
+	padding-top: 20px; 
 	
 }
 
@@ -468,18 +553,21 @@ input[type="button"]{
 	display: flex;
 	width: 940px;
 	justify-content: space-between;
-
+	align-items: center;
+	align-items: baseline;
+	margin: 0 auto;
 }
 
 .navigation {
 	display: flex;
-	flex-wrap: wrap;
 	width: 523px;
 	justify-content: space-between;
-
+    padding-left: 60px;
 }
 
-
+.last-footer-wrapper{
+	background-color: #293449;
+}
 
 .last-footer{
 	display: flex;
@@ -487,9 +575,8 @@ input[type="button"]{
 	min-height: 107px;
 	align-items: center;
 	justify-content: space-between;
-
+	margin: 0 auto;
 }
-
 
 .footer-social{
 	display: flex;
