@@ -17,6 +17,9 @@ ul{
 	list-style: none;
 }
 
+.visually-hidden{
+	display: none;
+}
 .search,
 .user-navigation,
 .site-navigation,
@@ -41,45 +44,36 @@ ul{
 
 }
 
-input[type="button"]{
-	border: none;
-	font-family: Cuprum;
-	line-height: 18px;
-	font-size: 17px;
-	background-color: transparent;
-	color: #ffffff;
+.search input{
+	align-items: center;
+    width: 270px;
+    padding-left: 50px;
+    color: #ffffff;
+    text-align: left;
+    background-color: #293449;
+    border: none; 
 }
 
-
-
-.search-input{
-	width: 270px;
-	height: 51px;
-	padding-right: 12px; 
-	outline: none;
-	border: none;
-
-
-}
-
-.search .search-input{
+.search label{
 	position: relative;
-	padding-left: 30px; 
-	background-color: #293449;
-	color: #ffffff;
-	
 }
 
-.search-input{
-    /*right: 20px;*/
-    content: "";
-    position: absolute;
-    width: 17px;
-    height: 17px;
-	background-image: url(../img/icon-search.svg);
-	background-repeat: no-repeat;
-	background-position: 0 0; 
+.search svg{
+	position: absolute;
+    /*top: 5px;*/
+    left: 15px; 
+  /*  opacity: 0.3;*/
+
     
+
+}
+
+.search input:focus {
+    /*padding: 19px 0px 19px 0px; */
+    color: #000000;
+    background-color: #ffffff;
+    /*border: none;
+    outline: none;*/
 }
 
 .user-navigation .user-navigation-bookmarks-link,
@@ -294,7 +288,8 @@ input[type="button"]{
 }
 
 .cooperation{
-	margin-bottom: 86px;
+	/*margin-top: 82px;
+	margin-bottom: 86px;*/
 }
 
 .technomart-company{
@@ -347,6 +342,7 @@ input[type="button"]{
 	padding: 12px 45px;
 	background-color: #ee3643;
 	border-radius: 3px; 
+	top: 30px; 
 }
 
 .about-us-button{
@@ -527,7 +523,9 @@ input[type="button"]{
 	justify-content: space-between;
 	width: 940px;
 	min-height: 500px;
+	margin-top: 82px;
 	align-items: center;
+	align-items: baseline;
 	margin: 0 auto;
 }
 
